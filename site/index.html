@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سایت آموزشی - صفحه اصلی</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="pb-12 bg-gray-50 text-gray-800 font-sans">
+    <header class="bg-blue-800 text-white p-6">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">سایت آموزشی دستیاری پزشکی</h1>
+                <p class="text-blue-100 text-sm mt-1">مرکز دروس و فصول - برای انتشار روی GitHub Pages</p>
+            </div>
+            <div class="hidden md:block text-xs bg-white/20 px-3 py-1 rounded-full">نسخهٔ نمونه</div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-4 space-y-8 mt-6">
+        <section class="card p-6 bg-white rounded-lg shadow">
+            <h2 class="text-xl font-bold mb-2">فهرست دروس</h2>
+            <p class="text-sm text-gray-600">برای هر درس یک پوشه ایجاد شده است. روی لینک‌ها کلیک کنید:</p>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-4">
+                <a href="courses/medicine/" class="block p-4 rounded border hover:shadow-md no-underline text-current bg-gray-50">
+                    <h3 class="font-bold">پزشکی داخلی</h3>
+                    <p class="text-xs text-gray-500 mt-1">site/courses/medicine/</p>
+                </a>
+                <a href="courses/dentistry/" class="block p-4 rounded border hover:shadow-md no-underline text-current bg-gray-50">
+                    <h3 class="font-bold">دندانپزشکی</h3>
+                    <p class="text-xs text-gray-500 mt-1">site/courses/dentistry/</p>
+                </a>
+                <a href="courses/medicine/residency/pre-intern/ch01/" class="block p-4 rounded border hover:shadow-md no-underline text-current bg-gray-50">
+                    <h3 class="font-bold">نمونه فصل: مقدمات (Ch01)</h3>
+                    <p class="text-xs text-gray-500 mt-1">site/courses/medicine/residency/pre-intern/ch01/</p>
+                </a>
+            </div>
+
+            <div class="mt-4 text-xs text-gray-500 bg-gray-100 p-3 rounded">
+                نکته: از لینک‌های relative استفاده کنید. مثال: <span class="font-mono">../ch02/</span>
+            </div>
+        </section>
+
+        <section class="card p-6 bg-white rounded-lg shadow">
+            <h2 class="text-lg font-bold">راهنمای سریع Deploy با GitHub Pages</h2>
+            <ol class="list-decimal list-inside mt-2 text-sm text-gray-700">
+                <li>محتوی سایت را در پوشهٔ <span class="font-mono">site/</span> نگه دارید.</li>
+                <li>فایل workflow در <span class="font-mono">.github/workflows/pages.yml</span> است.</li>
+                <li>در تنظیمات ریپازیتوری، Pages را روی GitHub Actions قرار دهید.</li>
+            </ol>
+        </section>
+    </main>
+
+    <footer class="text-center text-gray-400 text-xs py-8">تهیه شده جهت نمونهٔ ساختار سایت آموزشی</footer>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

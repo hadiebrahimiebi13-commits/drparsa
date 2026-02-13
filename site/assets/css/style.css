@@ -1,0 +1,4 @@
+/* پایهٔ CSS برای سایت آموزشی (RTL-ready) */
+html, body { direction: rtl; font-family: 'Vazirmatn', sans-serif; }
+.card { border-radius: 10px; }
+a { text-decoration: none; }
